@@ -47,7 +47,7 @@ function
       emails
        */
 
-function outputDate(){
+function outputDate() {
     studentData.forEach((i) => {
         document.write(`${i.name}, <br> ${i.coop}, <br> ${i.address.city}, <br> ${i.emails} <br> <br>`)
         console.log(`${i.name}, <br> ${i.coop}, <br> ${i.address.city}, <br> ${i.emails} <br> <br>`)
@@ -59,3 +59,15 @@ function outputDate(){
 }
 
 outputDate()
+
+
+
+studentData.forEach(function(i) {
+    document.write(`${i.name}, <br> ${i.coop}, <br> ${i.address.city}, <br> ${i.emails} <br> <br>`);
+    console.log(i.name);
+    console.log(i.coop);
+    console.log(i.address.city);
+    console.log(i.emails);
+})
+
+
